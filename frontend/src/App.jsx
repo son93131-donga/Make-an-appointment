@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './pages/home'
-import Doctors from './pages/Doctors'
+import Doctors from './pages/doctors'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Login from './pages/Login'
@@ -13,7 +13,7 @@ import Navbar from './components/Navbar'
 
 const App = () => {
   return (
-    <Router>
+    
       <div className='mx-4 sm:mx-[10%]'>
         <Navbar />
         <Routes>
@@ -29,7 +29,7 @@ const App = () => {
         
         </Routes>
       </div>
-    </Router>
+    
   )
 }
 
