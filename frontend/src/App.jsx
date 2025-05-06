@@ -9,12 +9,16 @@ import MyAppointments from './pages/MyAppointments'
 import MyProfile from './pages/MyProfile'
 import Appointment from './pages/Appointment'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 
 
 const App = () => {
   return (
     
+    console.log("App rendered"), // ✅ Kiểm tra trong Console
+
+
       <div className='mx-4 sm:mx-[10%]'>
         <Navbar />
        
@@ -31,6 +35,8 @@ const App = () => {
           <Route path='/my-profile' element={<MyProfile />} /> 
         
         </Routes>
+
+        <Footer />
       </div>
     
   )
